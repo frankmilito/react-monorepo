@@ -1,9 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
 
-import NxWelcome from './nx-welcome';
-import { Route, Routes, useRoutes } from 'react-router-dom';
-import { ProductList } from '@obidike-org/products';
+import { useRoutes } from 'react-router-dom';
+import { ProductList, Products } from '@obidike-org/products';
 import { OrderList } from '@obidike-org/orders';
 
 function Home() {
@@ -14,6 +12,7 @@ export function App() {
     { path: '/', element: <Home /> },
     { path: 'orders', element: <OrderList /> },
     { path: 'product', element: <ProductList /> },
+    { path: 'products', element: <Products /> },
   ]);
   return routes;
 }
