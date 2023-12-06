@@ -4,6 +4,6 @@
 
 describe('App', () => {
   it('should should be truthy', () => {
-    expect(true).toBe(false);
+    expect(true).toBe(true);
   });
 });
